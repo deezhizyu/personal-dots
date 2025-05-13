@@ -1,24 +1,27 @@
-[font]
-size = 11
-
-[font.bold]
-family = "Iosevka Nerd Font Mono"
-style = "Bold"
-
-[font.bold_italic]
-family = "Iosevka Nerd Font Mono"
-style = "Bold Italic"
-
-[font.italic]
-family = "Iosevka Nerd Font Mono"
-style = "Italic"
-
-[font.normal]
-family = "Iosevka Nerd Font Mono"
-style = "Regular"
+[general]
+import = [
+    "~/.config/alacritty/themes/themes/catppuccin_mocha.toml"
+]
 
 [window]
-padding = { x = 20, y = 10 }
-title = "Terminal"
-dynamic_title = false
-dynamic_padding = true
+dimensions = { columns = 125, lines = 28 }
+opacity = 0.75
+blur = true
+
+[font]
+normal = { family = "JetBrains Mono", style = "Semibold" }
+size = 12.0
+
+[cursor]
+smooth_motion = true
+smooth_motion_factor = 1.0
+smooth_motion_spring = 0.5
+smooth_motion_max_stretch_x = 3.0
+smooth_motion_max_stretch_y = 3.0
+block_replace_shape = "beam"
+
+[keyboard]
+bindings = [
+  { key = "Q", mods = "Control", action = "Quit" },
+  { key = "T", mods = "Control", action = "SpawnNewInstance" }
+]

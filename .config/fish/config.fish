@@ -1,15 +1,10 @@
-# Interactive shell settings
 if status is-interactive
-    set fish_greeting
-    set fish_tmux_autostart false
-    set fish_tmux_autoname_session true
-    # fastfetch
-    # fuck a fastfetch, we got a bashfetch, bitch.
-    ~/.local/bin/fetch
+    # Commands to run in interactive sessions can go here
 end
 
-set MANPAGER "nvim +Man!"
-
-# Alt+Escape to prepend 'sudo'
-bind \e\e 'begin; set -l buf (commandline); commandline -r "sudo "$buf; end'
-bind -k nul accept-autosuggestion
+# pnpm
+set -gx PNPM_HOME "/home/andrii/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end

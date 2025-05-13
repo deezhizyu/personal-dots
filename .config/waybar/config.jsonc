@@ -20,6 +20,7 @@
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
     "group/systray",
+    "hyprland/language",
     "pulseaudio",
     "pulseaudio#microphone",
     "battery",
@@ -54,13 +55,18 @@
     "format": "{}",
     "active-only": false,
     "persistent-workspaces": {},
-    "on-scroll-up": "hyprctl dispatch workspace e+1",
-    "on-scroll-down": "hyprctl dispatch workspace e-1",
+    "on-scroll-up": "hyprctl dispatch workspace e-1",
+    "on-scroll-down": "hyprctl dispatch workspace e+1",
+  },
+  "hyprland/language": {
+    "format": "{} ",
+    "format-en": "EN",
+    "format-uk": "UA",
   },
   "wlr/taskbar": {
     "format": "{icon}",
     "icon-size": 20,
-    "icon-theme": "Papirus-Dark",
+    "icon-theme": "Papirus",
     "tooltip-format": "{title}",
     "on-click": "activate",
     "on-click-middle": "close",
@@ -76,7 +82,7 @@
     ],
   },
   "clock": {
-    "format": " {:%I:%M %p\n<sub>%m/%d/%Y</sub>}",
+    "format": " {:%H:%M %p\n<sub>%m/%d/%Y</sub>}",
     "tooltip-format": "{:%a, %b %e, %Y}",
   },
   "battery": {
