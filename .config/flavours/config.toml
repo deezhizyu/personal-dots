@@ -23,7 +23,7 @@ hook = "~/.local/bin/harmonyctl reload gtk"
 
 ### VESKTOP ###
 [[items]]
-file = "~/.config/vesktop/settings/quickCss.css"
+file = "~/.var/app/dev.vencord.Vesktop/config/vesktop/settings/quickCss.css"
 template = "vesktop"
 rewrite = true
 
@@ -35,32 +35,32 @@ rewrite = true
 
 ### FIREFOX ###
 [[items]]
-file = "/home/bypass/.mozilla/firefox/li1xg7z9.default-release/chrome/userChrome.css"
+file = "~/.var/app/io.gitlab.librewolf-community/.librewolf/l3hoxnuk.default-default/chrome/userChrome.css"
 template = "firefox"
 rewrite = false
 start = "/* start colors */"
 end = "/* end colors */"
 [[items]]
-file = "/home/bypass/.mozilla/firefox/li1xg7z9.default-release/chrome/userContent.css"
+file = "~/.var/app/io.gitlab.librewolf-community/.librewolf/l3hoxnuk.default-default/chrome/userContent.css"
 template = "firefox"
 rewrite = false
 start = "/* start colors */"
 end = "/* end colors */"
 
 ### MPV ###
-[[items]]
-file = "~/.config/mpv/mpv.conf"
-template = "mpv"
-rewrite = false
-start = "# start colors"
-end = "# end colors"
+# [[items]]
+# file = "~/.config/mpv/mpv.conf"
+# template = "mpv"
+# rewrite = false
+# start = "# start colors"
+# end = "# end colors"
 
 ### STEAM ###
-[[items]]
-file = "~/.local/share/adwaita-steam/adwaita/colorthemes/base16/base16.css"
-template = "steam"
-rewrite = true
-hook = "~/.local/bin/harmonyctl reload steam"
+# [[items]]
+# file = "~/.local/share/adwaita-steam/adwaita/colorthemes/base16/base16.css"
+# template = "steam"
+# rewrite = true
+# hook = "~/.local/bin/harmonyctl reload steam"
 
 ### ZED EDITOR ###
 [[items]]
@@ -75,13 +75,13 @@ template = "hyprland"
 rewrite = true
 
 ### MAKO DAEMON ###
-[[items]]
-file = "~/.config/mako/config"
-template = "mako"
-rewrite = false
-start = "# start colors"
-end = "# end colors"
-hook = "~/.local/bin/harmonyctl reload mako"
+# [[items]]
+# file = "~/.config/mako/config"
+# template = "mako"
+# rewrite = false
+# start = "# start colors"
+# end = "# end colors"
+# hook = "~/.local/bin/harmonyctl reload mako"
 
 ### SWAYNC DAEMON ###
 [[items]]
@@ -106,26 +106,32 @@ template = "waybar"
 rewrite = true
 hook = "~/.local/bin/harmonyctl reload waybar"
 
-### FOOT TERMINAL ###
+### ALACRITTY TERMINAL ###
 [[items]]
-file = "~/.config/foot/colors.ini"
-template = "foot"
+file = "~/.config/alacritty/colors.toml"
+template = "alacritty"
 rewrite = true
+
+### FOOT TERMINAL ###
+# [[items]]
+# file = "~/.config/foot/colors.ini"
+# template = "foot"
+# rewrite = true
 
 ### GHOSTTY TERMINAL ###
-[[items]]
-file = "~/.config/ghostty/themes/base.conf"
-template = "ghostty"
-rewrite = true
-hook = "~/.local/bin/harmonyctl reload ghostty"
+# [[items]]
+# file = "~/.config/ghostty/themes/base.conf"
+# template = "ghostty"
+# rewrite = true
+# hook = "~/.local/bin/harmonyctl reload ghostty"
 
 ### TMUX ###
-[[items]]
-file = "~/.config/tmux/base16.conf"
-template = "tmux"
-subtemplate = "default"
-rewrite = true
-hook = "tmux source ~/.config/tmux/base16.conf"
+# [[items]]
+# file = "~/.config/tmux/base16.conf"
+# template = "tmux"
+# subtemplate = "default"
+# rewrite = true
+# hook = "tmux source ~/.config/tmux/base16.conf"
 
 ### FISH SHELL ###
 [[items]]
@@ -134,24 +140,24 @@ template = "fish"
 rewrite = true
 
 ### HELIX EDITOR ###
-[[items]]
-file = "~/.config/helix/themes/base16.toml"
-template = "helix"
-rewrite = true
+# [[items]]
+# file = "~/.config/helix/themes/base16.toml"
+# template = "helix"
+# rewrite = true
 
 ### MICRO EDITOR ###
-[[items]]
-file = "~/.config/micro/colorschemes/base16.micro"
-template = "micro"
-rewrite = true
+# [[items]]
+# file = "~/.config/micro/colorschemes/base16.micro"
+# template = "micro"
+# rewrite = true
 
 ### SPOTIFY ###
-[[items]]
-file = "~/.config/spicetify/Themes/base16/color.ini"
-template = "spotify"
-rewrite = true
-hook = "~/.local/bin/harmonyctl reload spotify"
-light = false
+# [[items]]
+# file = "~/.config/spicetify/Themes/base16/color.ini"
+# template = "spotify"
+# rewrite = true
+# hook = "~/.local/bin/harmonyctl reload spotify"
+# light = false
 
 ### NWG DOCK ###
 [[items]]
