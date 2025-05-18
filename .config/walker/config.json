@@ -277,9 +277,9 @@
           "exec": "~/.local/bin/bde hf"
         },
         {
-          "label": "Lock Screen",
+          "label": "Logout",
           "icon": "system-lock-screen",
-          "exec": "hyprlock"
+          "exec": "hyprctl dispatch exit"
         },
         {
           "label": "Reboot",
