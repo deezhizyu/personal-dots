@@ -8,7 +8,7 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "show_edit_predictions": true,
-  "agent": {
+  "assistant": {
     "default_model": {
       "provider": "copilot_chat",
       "model": "gpt-4o"
@@ -20,7 +20,7 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Base16 Flavours"
+    "dark": "Catppuccin Mocha"
   },
 
   "lsp": {
