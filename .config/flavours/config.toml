@@ -14,7 +14,6 @@ hook = "~/.local/bin/harmonyctl reload gtk"
 
 ### GTK 4.0 THEME ###
 [[items]]
-#file = "~/.themes/phocus/gtk-4.0/gtk.css"
 file = "~/.config/gtk-4.0/gtk.css"
 template = "gtk4"
 rewrite = false
@@ -26,6 +25,12 @@ hook = "~/.local/bin/harmonyctl reload gtk"
 [[items]]
 file = "~/.var/app/dev.vencord.Vesktop/config/vesktop/settings/quickCss.css"
 template = "vesktop"
+rewrite = true
+
+### QT6CT ###
+[[items]]
+file = "~/.config/qt6ct/colors/base16.conf"
+template = "qt6ct"
 rewrite = true
 
 ### NCSPOT ###
