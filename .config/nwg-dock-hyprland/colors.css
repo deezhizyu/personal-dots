@@ -1,17 +1,17 @@
 window {
-    background: #212121;        /* base00 */
-    border-color: #353535;      /* base02 */
+    background: #16161b;        /* base00 */
+    border-color: #2a2a31;      /* base02 */
 }
 
 button,
 image {
-    color: #ffffff;             /* base07 */
+    color: #67677b;             /* base07 */
 }
 
 button {
-    color: #eeffff;             /* base05 */
+    color: #9595ae;             /* base05 */
 }
 
 button:hover {
-    background-color: #353535;  /* base02 */
+    background-color: #2a2a31;  /* base02 */
 }

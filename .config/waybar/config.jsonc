@@ -173,25 +173,17 @@
   "custom/power": {
     "tooltip": false,
     "format": "",
-    "on-click": "swaync-client -t",
-    "on-click-right": "walker -m power",
-
-    // "menu": "on-click-right",
-    // "menu-file": "~/.config/waybar/menus/power.xml",
-    // "menu-actions": {
-    //   "shutdown": "notify-send 1",
-    //   "reboot": "notify-send 2",
-    //   "suspend": "notify-send 3",
-    //   "hibernate": "notify-send 4",
-    // },
+    "on-click": "walker -m power",
+    "on-click-right": "swaync-client -t",
   },
   "custom/spotify": {
-    "tooltip": true,
+    "tooltip": false,
     "tooltip-format": "{}",
-    "format": "󰎇",
+    "format": "{}",
     "escape": true,
     "exec": "$HOME/.config/waybar/scripts/mediaplayer.sh",
     "on-click": "playerctl play-pause",
+    "on-click-right": "activate",
   },
   "custom/weather": {
     "format": "{}°",
