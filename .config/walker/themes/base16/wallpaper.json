@@ -44,7 +44,8 @@
                 "hide": true
               },
               "icon": {
-                "pixel_size": 250,
+                "pixel_size": 100,
+                "height": 40,
                 "theme": ""
               },
               "label": {
