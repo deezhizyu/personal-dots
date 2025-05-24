@@ -83,7 +83,7 @@
     ],
   },
   "clock": {
-    "format": " {:%H:%M %p\n<sub>%m/%d/%Y</sub>}",
+    "format": "     {:%H:%M\n<sub>%m/%d/%Y</sub>}",
     "tooltip-format": "{:%a, %b %e, %Y}",
   },
   "battery": {
@@ -114,9 +114,9 @@
     "on-click-right": "blueman-manager",
   },
   "pulseaudio": {
-    "format": "{icon}    {volume}%",
+    "format": "{icon}  {volume}%",
     "tooltip": true,
-    "format-muted": " MUTE",
+    "format-muted": "   MUTE",
     "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
     "on-click-right": "GTK_THEME=Adw pavucontrol",
     "on-scroll-up": "pamixer -i 1",
